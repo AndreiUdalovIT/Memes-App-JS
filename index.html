@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memes App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/reset.css">
+    <link rel="stylesheet" href="/CSS/index.css">
+</head>
+<body>
+    <h1>Memes App</h1>
+    <div class="content-flex">
+        <div class="settings">
+            <h2>Настройки:</h2>
+            <div class="settings-input-flex">
+                <div class="mem">
+                    <p class="name-input">Мем</p>
+                    <select class="input" id="mem-input">
+                    </select>
+                </div>
+                <div class="text-top">
+                    <p class="name-input">Текст сверху</p>
+                    <input class="input" id="input-text-top" type="text">
+                </div>
+                <div class="text-bottom">
+                    <p class="name-input">Текст снизу</p>
+                    <input class="input" id="input-text-bottom" type="text">
+                </div>
+                <p class="error" id="error"></p>
+            </div>
+        </div>
+        <div class="preview">
+            <h2>Превью:</h2>
+            <div class="img-wrapper">  
+                <img class="image" id="image" src="" alt="">
+            </div> 
+            <p class="text-top-img" id="text-top-img"></p>
+            <p class="text-bottom-img" id="text-bottom-img"></p>
+        </div>
+    </div>
+    <script src="/JS/api.js"></script>
+    <script src="/JS/controller.js"></script>
+    <script src="/JS/model.js"></script>
+    <script src="/JS/view.js"></script>
+    <script src="/JS/index.js"></script>
+</body>
+</html>
